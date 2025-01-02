@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Contact | Reyna Villanueva Photography</title>
+		<link rel="stylesheet" href="./styles/contact-page.css" />
+		<link rel="stylesheet" href="./styles/global-styles.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Baskervville:ital@0;1&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+	</head>
+	<body>
+		<header>
+			<!-- Start of nav bar containing logo and nav panel -->
+			<nav>
+				<!-- Start of header wrapper -->
+				<div class="header-container">
+					<!-- Link to home page for the logo image -->
+					<a href="index.html">
+						<!-- Full logo for large screens -->
+						<img
+							src="./images/ReynaVillanueva-removebg-preview.png"
+							alt="Full Logo"
+							class="full-logo"
+						/>
+					</a>
+					<!-- Link to Home Page for the logo img -->
+					<a href="index.html">
+						<!-- Smaller version of logo for mobile screens -->
+						<img
+							src="./images/rvlogosmall-removebg-preview.png"
+							alt="Small Logo"
+							class="small-logo"
+						/>
+					</a>
+					<!-- Container for the nav panel and the title -->
+					<div class="nav-title-container">
+						<!-- Container for the nav panel -->
+						<ul class="nav-container">
+							<li><a class="nav-item" href="index.html">HOME</a></li>
+							<li>
+								<a class="nav-item" href="about-page.html">ABOUT</a>
+							</li>
+							<li>
+								<a class="nav-item" href="gallery-page.html">GALLERY</a>
+							</li>
+							<li>
+								<a class="nav-item" id="current-page" href="contact-page.html"
+									>CONTACT</a
+								>
+							</li>
+						</ul>
+						<!-- End of container for the nav panel -->
+						<!-- Title/H1 -->
+						<h1>&copy; Reyna Villanueva Photography Portfolio</h1>
+					</div>
+					<!-- End of container for the nav panel and title -->
+				</div>
+				<!-- End of Header wrapper -->
+			</nav>
+			<!-- End of nav bar containing logo and nav panel -->
+		</header>
+		<main>
+			<!-- Wrapper for the video and form -->
+			<div class="contact-container">
+				<!-- Container for the video 1 -->
+				<div class="contact-video-box">
+					<!-- Video with settings -->
+					<video
+						class="contact-video"
+						loop
+						autoplay
+						muted
+						aria-label="Flowers in the foreground and a girl holding a camera in the background"
+					>
+						<!-- Source for video -->
+						<source src="./videos/contact.mp4" type="video/mp4" />
+					</video>
+				</div>
+				<!-- End of container for video 1 -->
+				<!-- Wrapper for the contact form -->
+				<div class="contact-form-box">
+					<!-- Form title/H2 -->
+					<h2 class="contact-h2">CONTACT ME</h2>
+					<!-- Form with labels and inputs -->
+					<form class="form-style">
+						<label for="firstname" class="label-text">First name</label>
+						<input
+							class="input-style"
+							id="firstname"
+							name="firstname"
+							type="text"
+							placeholder="Write your first name here"
+						/>
+						<label for="lastname" class="label-text">Last name</label>
+						<input
+							class="input-style"
+							id="lastname"
+							name="lastname"
+							type="text"
+							placeholder="Write your last name here"
+						/>
+						<label for="emailaddress" class="label-text">Email address</label>
+						<input
+							class="input-style"
+							id="emailaddress"
+							name="emailaddress"
+							type="text"
+							placeholder="Write your email address here"
+						/>
+						<label for="phonenumber" class="label-text">Phone number</label>
+						<input
+							class="input-style"
+							id="phonenumber"
+							name="phonenumber"
+							type="text"
+							placeholder="Write your phone number here"
+						/>
+						<label for="message" class="label-text">Message</label>
+						<input
+							class="input-style"
+							id="message"
+							name="message"
+							type="text"
+							placeholder="Write your message here"
+						/>
+					</form>
+					<!-- Button to submit -->
+					<button class="button-custom" id="contact-button" type="submit">
+						Submit
+					</button>
+				</div>
+				<!-- End of contact form wrapper -->
+				<!-- Container for the video 2 -->
+				<div class="contact-video-box" id="contact-video2">
+					<!-- Video with settings -->
+					<video
+						class="contact-video"
+						loop
+						autoplay
+						muted
+						aria-label="An old camera"
+					>
+						<!-- Source for video -->
+						<source src="./videos/contact2.mp4" type="video/mp4" />
+					</video>
+				</div>
+				<!-- End of container for video 2 -->
+			</div>
+		</main>
+		<footer>
+			<!-- Start of footer container -->
+			<div class="footer-container">
+				<!-- Start of icons container -->
+				<ul class="icons-container">
+					<li>
+						<!-- Icons with links to respective websites -->
+						<a class="footer-icon" href="https://www.facebook.com/"
+							><i class="fa fa-facebook-square" style="font-size: 30px"></i>
+						</a>
+					</li>
+					<li>
+						<a class="footer-icon" href="https://www.instagram.com/"
+							><i class="fa fa-instagram" style="font-size: 30px"></i>
+						</a>
+					</li>
+					<li>
+						<a class="footer-icon" href="https://www.pinterest.com/"
+							><i class="fa fa-pinterest-square" style="font-size: 30px"></i>
+						</a>
+					</li>
+				</ul>
+				<!-- End of icons container -->
+				<!-- Footnote with copyright symbol -->
+				<a href="#"> <p id="footnote">&copy; Reyna Villanueva Photography</p></a>
+			</div>
+			<!-- End of footer container -->
+		</footer>
+	</body>
+</html>
