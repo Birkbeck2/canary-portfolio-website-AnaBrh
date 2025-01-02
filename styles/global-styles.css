@@ -1,0 +1,350 @@
+/* Designed mobile first (320px-480px)*/
+
+/* SETTING DEFAULT STYLING */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+img {
+	display: block;
+	max-width: 100%;
+}
+video {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+h1 {
+	text-align: end;
+	margin-right: -11vw;
+	font-size: 3.5vw;
+	font-weight: 500;
+	color: #161616;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h2 {
+	text-align: center;
+	font-style: normal;
+	color: #161616;
+	letter-spacing: 0.02rem;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h3 {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	text-align: center;
+	font-size: 4vw;
+}
+a {
+	text-decoration: none;
+	color: #161616;
+}
+a:link {
+	color: #161616;
+}
+a:visited {
+	color: #161616;
+}
+p {
+	color: #161616;
+	text-align: center;
+	text-wrap: pretty;
+	font-family: 'Baskervville', serif;
+}
+body {
+	background-color: #e7e7e7;
+	margin: 0;
+	padding: 0;
+}
+
+/* HEADER STYLING */
+
+/* Styling for header container */
+.header-container {
+	display: flex;
+	flex-direction: row;
+	top: 0;
+	width: 100%;
+	height: auto;
+	position: fixed;
+	background-color: #b5cbcb;
+	box-shadow: 0px 0px 10px #161616;
+	z-index: 1;
+}
+/* Styling for nav container */
+.nav-container {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	gap: 0.7rem;
+	padding: 0;
+	flex: 2;
+}
+/* Styling for nav items */
+.nav-item {
+	font-size: 3.5vw;
+	font-weight: 600;
+	font-family: 'Baskervville', serif;
+	color: #161616;
+	text-align: center;
+}
+/* Styling for nav + title container */
+.nav-title-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+	align-items: center;
+	margin: 7vw 3vw 4vw 3vw;
+}
+/* Small logo styling */
+.small-logo {
+	object-fit: contain;
+	flex: 1;
+	width: 85%;
+	height: auto;
+	margin: 0;
+	border-right: 1px solid #e7e7e7;
+}
+/* Full logo styling */
+.full-logo {
+	display: none;
+	flex: 1;
+}
+/* Custom buttons styling */
+.button-custom {
+	justify-content: center;
+	background-color: #e7e7e7;
+	border: 1px solid black;
+	border-radius: 5px;
+	text-align: center;
+	text-decoration: none;
+	padding: 2vw 1.5vw 2vw 1.5vw;
+	margin: 0.5vw;
+	width: 30%;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.button-custom:hover {
+	cursor: pointer;
+	background-color: #161616;
+	border-radius: 5px;
+	color: #ffffff;
+	text-decoration: none;
+}
+.button-custom:focus {
+	background-color: #161616;
+	border-radius: 5px;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+/* FOOTER STYLING */
+
+/* Footer container styling */
+.footer-container {
+	background-color: #b5cbcb;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: auto;
+	padding: 1.5vw 1vw 1.5vw 1vw;
+	box-shadow: 0px 0px 10px #161616;
+	bottom: 0;
+}
+/* Container for icons styling */
+.icons-container {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+	margin-left: 1.5vw;
+	margin-right: 1.5vw;
+	align-items: center;
+	gap: 1rem;
+	padding: 0;
+}
+/* Footnote with copyright styling */
+#footnote {
+	text-align: end;
+	bottom: 0;
+	right: 0;
+	margin: 0;
+	font-size: 3.7vw;
+	font-family: 'Baskervville', serif;
+	margin-right: 1.5vw;
+}
+
+/* Media queries for different screen sizes */
+
+/* Media query for large screens*/
+@media only screen and (min-width: 1441px) {
+	.header-container {
+		justify-content: space-between;
+		padding-right: 2vw;
+	}
+	.nav-container {
+		gap: 1.2em;
+		margin-bottom: 0.5vw;
+		margin-top: -4vw;
+	}
+	.nav-item {
+		font-size: 1.4vw;
+	}
+	.nav-item:hover {
+		color: #ffffff;
+	}
+	.nav-item:focus {
+		border: 5px solid #b5cbcb;
+		color: #ffffff;
+	}
+	.nav-title-container {
+		margin-bottom: 2vw;
+		margin-right: 0vw;
+	}
+	.small-logo {
+		display: none;
+	}
+	.full-logo {
+		width: 40%;
+		height: auto;
+		margin: -0.5vw 0vw -2vw 2vw;
+		display: inline;
+	}
+	h1 {
+		margin-right: -4vw;
+		padding-top: 1vw;
+		font-size: 1.5vw;
+	}
+	#footnote {
+		padding-right: 0.5vw;
+		font-size: 1.2vw;
+	}
+	.footer-icon:hover {
+		color: #ffffff;
+	}
+}
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+	.header-container {
+		justify-content: space-between;
+		padding-right: 2vw;
+	}
+	.nav-container {
+		gap: 1.2em;
+		margin-bottom: 0.5vw;
+		margin-top: -4vw;
+	}
+	.nav-item {
+		font-size: 1.4vw;
+	}
+	.nav-item:hover {
+		color: #ffffff;
+	}
+	.nav-item:focus {
+		border: 5px solid #b5cbcb;
+		color: #ffffff;
+	}
+	.nav-title-container {
+		margin-bottom: 2vw;
+		margin-right: 0vw;
+	}
+	.small-logo {
+		display: none;
+	}
+	.full-logo {
+		width: 40%;
+		height: auto;
+		margin: -0.5vw 0vw -2vw 2vw;
+		display: inline;
+	}
+	h1 {
+		margin-right: -4vw;
+		padding-top: 1vw;
+		font-size: 1.5vw;
+	}
+	#footnote {
+		padding-right: 0.5vw;
+		font-size: 1.2vw;
+	}
+	.footer-icon:hover {
+		color: #ffffff;
+	}
+}
+/* Media query for laptops and desktops*/
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+	.header-container {
+		justify-content: space-between;
+		padding-right: 2vw;
+	}
+	.nav-container {
+		gap: 1.2em;
+		margin-bottom: 0.5vw;
+		margin-top: -4vw;
+	}
+	.nav-item {
+		font-size: 1.4vw;
+	}
+	.nav-item:hover {
+		color: #ffffff;
+	}
+	.nav-item:focus {
+		border: 5px solid #b5cbcb;
+		color: #ffffff;
+	}
+	.nav-title-container {
+		margin-bottom: 3vw;
+		margin-right: 0vw;
+	}
+	.small-logo {
+		display: none;
+	}
+	.full-logo {
+		width: 25%;
+		height: auto;
+		margin: 0vw 0vw -2vw 2vw;
+		display: inline;
+	}
+	h1 {
+		margin-right: -5.5vw;
+		padding-top: 1vw;
+		font-size: 1.5vw;
+	}
+	#footnote {
+		padding-right: 0.5vw;
+		font-size: 1.5vw;
+	}
+	.footer-icon:hover {
+		color: #ffffff;
+	}
+}
+/* Media query for tablets and large mobile phones*/
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+	.nav-container {
+		gap: 0.9em;
+		margin-right: 3vw;
+	}
+	.nav-item {
+		font-size: 2.3vw;
+	}
+	.nav-title-container {
+		margin-bottom: 3vw;
+		margin-right: 0vw;
+	}
+	.small-logo {
+		display: none;
+	}
+	.full-logo {
+		width: 50%;
+		height: auto;
+		margin-left: 4vw;
+		display: block;
+	}
+	h1 {
+		padding-right: 0vw;
+		font-size: 2vw;
+	}
+	#footnote {
+		padding-right: 0.5vw;
+		font-size: 2vw;
+	}
+}
