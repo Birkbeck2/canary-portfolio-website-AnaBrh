@@ -1,0 +1,143 @@
+/* Designed mobile first (320px-480px)*/
+
+/* Wrapper for the image and text */
+.about-container {
+	display: flex;
+	flex-direction: column;
+	margin: 20vw 0vw 0vw 0vw;
+}
+/* Image container */
+.about-img-box {
+	flex: 1;
+	background-color: #b5cbcb;
+}
+/* Image styling */
+.about-img-box img {
+	width: 100%;
+	height: auto;
+	object-fit: contain;
+}
+/* Text container */
+.about-text-box {
+	flex: 2;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 4vw 4vw;
+	padding: 10vw 5vw 10vw 5vw;
+	text-align: center;
+	text-wrap: pretty;
+	line-height: 1.4rem;
+	border-radius: 10px;
+	border: 2.5px dotted #161616;
+	font-family: 'Baskervville', serif;
+	background-color: #b5cbcb;
+}
+/* Custom H2 for about page */
+#about-h2 {
+	padding-bottom: 6vw;
+	font-size: 5.6vw;
+}
+/* Custom button styling for about page */
+#about-buttons {
+	margin-top: 6vw;
+}
+/* Highlight of current page styling */
+#current-page {
+	padding: 0.7vw;
+	border: 1px solid #161616;
+}
+
+/* Media queries for different screen sizes */
+
+/* Media query for extra large screens*/
+@media only screen and (min-width: 1441px) {
+	.about-container {
+		flex-direction: row;
+		margin: 12vw 1.8vw 1.8vw 1.8vw;
+	}
+	.about-text-box {
+		flex: 1;
+		margin: 0;
+		padding: 1vw 3vw 1vw 3vw;
+		border-radius: 0;
+		border: 0;
+		font-size: 1.4vw;
+		line-height: 2vw;
+	}
+	#about-h2 {
+		padding-bottom: 2vw;
+		margin-top: 2vw;
+		font-size: 2.5vw;
+		letter-spacing: 0.02rem;
+	}
+	#about-buttons {
+		margin-top: 4vw;
+		font-size: 1.5vw;
+		border-radius: 10px;
+		height: 70%;
+	}
+}
+/* Media query for large screens*/
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+	.about-container {
+		flex-direction: row;
+		margin: 12vw 1.8vw 1.8vw 1.8vw;
+	}
+	.about-text-box {
+		flex: 1;
+		margin: 0;
+		padding: 1vw 3vw 1vw 3vw;
+		border-radius: 0;
+		border: 0;
+		font-size: 1.4vw;
+		line-height: 2vw;
+	}
+	#about-h2 {
+		padding-bottom: 2vw;
+		margin-top: 2vw;
+		font-size: 2.5vw;
+		letter-spacing: 0.02rem;
+	}
+	#about-buttons {
+		margin-top: 4vw;
+		font-size: 1.5vw;
+		border-radius: 10px;
+		height: 70%;
+	}
+}
+/* Media query for laptops and desktops*/
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+	.about-container {
+		flex-direction: row;
+		margin: 13vw 1.8vw 1.8vw 1.8vw;
+	}
+	.about-text-box {
+		flex: 1;
+		margin: 0;
+		padding: 3vw;
+		border-radius: 0;
+		border: 0;
+		font-size: 1.25vw;
+	}
+	#about-h2 {
+		padding-bottom: 2vw;
+		font-size: 2.5vw;
+		letter-spacing: 0.02rem;
+	}
+}
+/* Media query for tablets and large mobile phones*/
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+	.about-container {
+		flex-direction: column;
+		margin: 17vw 0vw 0vw 0vw;
+	}
+	.about-text-box {
+		font-size: 2.3vw;
+	}
+	#about-h2 {
+		padding-bottom: 4.5vw;
+		font-size: 3.5vw;
+		text-align: center;
+	}
+}
