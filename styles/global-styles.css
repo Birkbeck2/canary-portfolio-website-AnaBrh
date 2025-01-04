@@ -99,7 +99,6 @@ body {
 /* Small logo styling */
 .small-logo {
 	object-fit: contain;
-	flex: 1;
 	width: 85%;
 	height: auto;
 	margin: 0;
@@ -108,7 +107,6 @@ body {
 /* Full logo styling */
 .full-logo {
 	display: none;
-	flex: 1;
 }
 /* Custom buttons styling */
 .button-custom {
