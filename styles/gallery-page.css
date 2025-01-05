@@ -134,7 +134,7 @@
 		padding-bottom: 2vw;
 	}
 	.gallery__column img:hover {
-		border: 2px solid #e7e7e7;
+		border: 2px solid transparent;
 	}
 }
 /* Media query for tablets and large mobile phones*/
