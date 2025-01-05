@@ -14,9 +14,8 @@
 }
 /* Custom H2 for contact page */
 .contact-h2 {
-	font-family: 'Baskervville', serif;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	padding-bottom: 6vw;
-	text-decoration: underline;
 	line-height: 0.4vw;
 	text-align: center;
 	font-size: 5vw;
@@ -51,7 +50,7 @@
 }
 /* Custom button styling for contact page */
 #contact-button {
-	font-family: 'Baskervville', serif;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	margin: auto;
 	margin-top: 2vw;
 	font-size: 4vw;
